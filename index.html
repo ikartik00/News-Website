@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container flex main-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="4291309.png" alt="Logo">
+                </a>
+            </div>
+            <div class="links">
+                <ul class="flex">
+                    <li class="hover nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover nav-item" id="Market" onclick="onNavItemClick('Market')">Market</li>
+                     <li class="hover nav-item" id="Satellite" onclick="onNavItemClick('Satellite')">Satellite</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" placeholder="eg Cricket" class="news-input" id="search-text">
+                <button class="search-button" id="searchbutton">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+         </div>
+        </main>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://fakeimg.pl/400x200" alt="" id="news_Img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/20223</h6>
+                    <p class="news-desc" id="news-desc">Ltia earum ut maiores temporibus nihil voluptatum dolore fugit repellendus? Autem at accusamus, nesciunt esse ut recusandae magnam?</p>
+                </div>
+            </div>
+        </template>
+    <script src="script.js"></script>
+</body>
+</html>
